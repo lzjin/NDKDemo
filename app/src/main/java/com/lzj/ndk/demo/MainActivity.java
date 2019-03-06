@@ -16,8 +16,10 @@ import butterknife.ButterKnife;
  */
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.tv)
-    TextView tv;
+    @BindView(R.id.say)
+    TextView say;
+    @BindView(R.id.add)
+    TextView add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
 
-        tv.setText("so内容:"+ OutText.say());
+        say.setText(  OutText.say());
+        add.setText(OutText.addNumber(2,3)+"");
     }
 }

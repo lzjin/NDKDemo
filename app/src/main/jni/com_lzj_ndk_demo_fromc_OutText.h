@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_lzj_ndk_demo_fromc_OutText_say
   (JNIEnv *, jclass);
 
+/*
+ * Class:     com_lzj_ndk_demo_fromc_OutText
+ * Method:    addNumber
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_com_lzj_ndk_demo_fromc_OutText_addNumber
+  (JNIEnv *, jclass, jint, jint);
+
 #ifdef __cplusplus
 }
 #endif
